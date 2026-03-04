@@ -332,23 +332,21 @@
       }
     },
     "com.unity.vectorgraphics": {
-      "version": "https://github.com/icosa-mirror/com.unity.vectorgraphics.git#open-brush",
+      "version": "3.0.0-preview.7",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {
+        "com.unity.ugui": "2.0.0",
         "com.unity.2d.sprite": "1.0.0",
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.imageconversion": "1.0.0",
-        "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.physics2d": "1.0.0",
         "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.physics2d": "1.0.0",
         "com.unity.modules.uielements": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.unitywebrequesttexture": "1.0.0",
-        "com.unity.modules.unitywebrequestwww": "1.0.0"
+        "com.unity.modules.vectorgraphics": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
       },
-      "hash": "a933fb8541371ff8ab171ab8e6af50a36f1f113e"
+      "url": "https://packages.unity.com"
     },
     "com.unity.xr.core-utils": {
       "version": "2.5.3",
