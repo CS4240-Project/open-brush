@@ -165,16 +165,28 @@ namespace TiltBrush
 
                 sketchset.GetSketchIcon(i, out Texture2D icon,
                     out string[] _, out string __);
+                //if (icon != null)
+                //{
+                //    var sprite = Sprite.Create(icon, new Rect(0, 0,
+                //        icon.width, icon.height), new Vector2(0.5f, 0.5f));
+                //    m_Dropdown.options.Add(new TMP_Dropdown.OptionData(sketchName, sprite));
+                //}
+                //else
+                //{
+                //    m_Dropdown.options.Add(new TMP_Dropdown.OptionData(sketchName));
+                //}
+                // improve version compatibility
+                var option = new TMP_Dropdown.OptionData();
+                option.text = sketchName;
+
                 if (icon != null)
                 {
-                    var sprite = Sprite.Create(icon, new Rect(0, 0,
-                        icon.width, icon.height), new Vector2(0.5f, 0.5f));
-                    m_Dropdown.options.Add(new TMP_Dropdown.OptionData(sketchName, sprite));
+                    option.image = Sprite.Create(icon,
+                        new Rect(0, 0, icon.width, icon.height),
+                        new Vector2(0.5f, 0.5f));
                 }
-                else
-                {
-                    m_Dropdown.options.Add(new TMP_Dropdown.OptionData(sketchName));
-                }
+
+                m_Dropdown.options.Add(option);
             }
         }
 

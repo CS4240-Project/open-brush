@@ -36,11 +36,18 @@ namespace TiltBrush
 
         private void OnEnable()
         {
+            //fix error
+            if (string.IsNullOrEmpty(DataRaw))
+                return;
+
             Initialize();
         }
 
         public void Initialize()
-        {
+        {   //fix error
+            if (string.IsNullOrEmpty(DataRaw))
+                return;
+
             var fontDataLines = DataRaw.Split('\n');
             _outlines = new Dictionary<int, List<List<Vector2>>>();
             _widths = new Dictionary<int, float>();
